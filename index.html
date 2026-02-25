@@ -1,0 +1,697 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="/Style/Header.css" />
+    <link rel="stylesheet" href="/Boostrap/css/bootstrap.min.css" />
+    <script src="/Boostrap/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="/Style/banner.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="position-sticky top-0 container-fluid bg">
+      <nav class="container py-3 navbar">
+        <a href="" class="fs-3 navbar-brand text-light fw-bold">Brew-Coffee</a>
+        <ul class="nav d-none d-lg-flex">
+          <li>
+            <a href="#Banner" class="nav-link text-uppercase text-light fs-6">Home</a>
+          </li>
+          <li>
+            <a href="#product" class="nav-link text-uppercase text-light fs-6">Product</a>
+          </li>
+          <li>
+            <a href="#service" class="nav-link text-uppercase text-light fs-6"
+              >Service</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="nav-link text-uppercase text-light fs-6"
+              >Contect</a
+            >
+          </li>
+        </ul>
+        <div class="d-none d-lg-flex align-items-center gap-3">
+          <input
+            type="search"
+            id="intputsearch"
+            class="form-control shadow-none rounded-5"
+            placeholder="Search Coffee..."
+          />
+          <i class="bi bi-cart text-light p-2 rounded-1"></i>
+        </div>
+        <i
+          class="d-lg-none text-light fs-3 bi-list"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#sidbar"
+          aria-controls="offcanvasWithBothOptions"
+        ></i>
+      </nav>
+
+      <div
+        class="offcanvas w-75 d-lg-none offcanvas-start"
+        data-bs-scroll="true"
+        tabindex="-1"
+        id="sidbar"
+        aria-labelledby="offcanvasWithBothOptionsLabel"
+      >
+        <div class="offcanvas-header border-bottom py-4">
+          <h3 class="text-light">Coffee Shop</h3>
+          <button
+            type="button"
+            class="btn-close bg-light"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <div class="offcanvas-body p-0">
+          <ul class="nav flex-column">
+            <li class="nav-item py-3">
+              <a href="#Banner" class="nav-link text-light fs-4">Home</a>
+            </li>
+            <li class="nav-item py-3">
+              <a href="#product" class="nav-link text-light fs-4">Product</a>
+            </li>
+            <li class="nav-item py-3">
+              <a href="#service" class="nav-link text-light fs-4">Service</a>
+            </li>
+            <li class="nav-item py-3">
+              <a href="#contact" class="nav-link text-light fs-4">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- body  -->
+    <main>
+      <div id="Banner" class="container-fuid">
+        <div class="container row mx-auto h-100 d-flex justify-content-center">
+          <div id="Banner_item" class="col-12 col-md-6 p-0">
+            <h1 class="text-light fs mt-4 mt-md-5">Craft Coffee Cup</h1>
+            <p class="">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis consequuntur id quidem nesciunt veniam fugiat nemo fugit eligendi amet ratione.</p>
+            <button class="btn btn-warning p-2 col">Explore Collection</button>
+          </div>
+          <!-- image -->
+          <div id="Banner_item" class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+            <img src="https://www.canteen.com/wp-content/uploads/Tradecraft-Cappuccino-Latte-Art.png"
+            class="h-75 w-75  img-thumbnail object-fit-cover" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- button -->
+      <div id="product" class="container-fluid p-0" style="background-color: rgb(40, 17, 17)">
+        <div class="container py-4 d-flex flex-wrap justify-content-between">
+          <div id="select" class="col-12 col-md-6 mx-auto">
+            <h1 class="text-light fs-3">Our Selection</h1>
+            <h6 class="text-secondary">Have 20 Product</h6>
+          </div>
+          <div class="col-12 col-md-6 d-flex justify-content-end gap-3 mx-auto">
+            <ul class="nav nav-pills my-auto" id="pills-tab" role="tablist">
+              <li role="presentation">
+                <button class="nav-link active" id="all-tap" data-bs-toggle="pill" data-bs-target="#all" type="button" role="tab" aria-controls="pills-home" aria-selected="true">All</button>
+              </li>
+              <li role="presentation">
+                <button class="nav-link" id="coffee-tap" data-bs-toggle="pill" data-bs-target="#coffee" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Coffee</button>
+              </li>
+              <li role="presentation">
+                <button class="nav-link" id="Milk-tea-tap" data-bs-toggle="pill" data-bs-target="#Milk-tea" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Milk Tea</button>
+              </li>
+            </ul>
+          </div>          
+        </div>
+      </div>
+      <!-- Product -->
+      <div  class=" py-4 p-0" style="background-color: rgb(40, 17, 17)">
+        <div class="container tab-content">
+          <div class="tab-pane active" id="all" role="tabpanel" aria-labelledby="all-tab" tabindex="0">
+            <h1 class="text-light text-decoration-underline">All Product</h1>
+            <div class="row py-3 m-0 ">
+
+              <div class="py-2 col-12 col-md-6 col-lg-3" style="height: 480px;">
+                <div class="card h-100 bg-warning">
+                    <div class=" card-header" style="height: 55%;">
+                      <img src="https://img.freepik.com/free-photo/top-view-hot-espresso-with-brown-coffee-seeds-brown-wooden-desk-coffee-cup-drink_140725-28168.jpg?semt=ais_user_personalization&w=740&q=80" alt="" class="img-thumbnill rounded-4 w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="card-body" style="height: 45%;">
+                      <h5>Coffee</h5>
+                      <p class="text-dark">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </p>
+                      <p class="text-dark">1.5$</p>
+                      <div class="d-flex justify-content-between">
+                        <button class="btn btn-primary px-2">Add Cart</button>
+                        <button class="btn btn-success px-2 ">Buy Now</button>
+                      </div>
+                    </div>
+                </div>  
+              </div>
+
+              <div class="py-2 col-12 col-md-6 col-lg-3" style="height: 480px;">
+                <div class="card h-100 bg-warning">
+                    <div class=" card-header" style="height: 55%;">
+                      <img src="https://img.freepik.com/free-photo/top-view-hot-espresso-with-brown-coffee-seeds-brown-wooden-desk-coffee-cup-drink_140725-28168.jpg?semt=ais_user_personalization&w=740&q=80" alt="" class="img-thumbnill rounded-4 w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="card-body" style="height: 45%;">
+                      <h5>Coffee</h5>
+                      <p class="text-dark">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </p>
+                      <p class="text-dark">1.5$</p>
+                      <div class="d-flex justify-content-between">
+                        <button class="btn btn-primary px-2">Add Cart</button>
+                        <button class="btn btn-success px-2 ">Buy Now</button>
+                      </div>
+                    </div>
+                </div>  
+              </div>
+
+              <div class="py-2 col-12 col-md-6 col-lg-3" style="height: 480px;">
+                <div class="card h-100 bg-warning">
+                    <div class=" card-header" style="height: 55%;">
+                      <img src="https://img.freepik.com/free-photo/top-view-hot-espresso-with-brown-coffee-seeds-brown-wooden-desk-coffee-cup-drink_140725-28168.jpg?semt=ais_user_personalization&w=740&q=80" alt="" class="img-thumbnill rounded-4 w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="card-body" style="height: 45%;">
+                      <h5>Coffee</h5>
+                      <p class="text-dark">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </p>
+                      <p class="text-dark">1.5$</p>
+                      <div class="d-flex justify-content-between">
+                        <button class="btn btn-primary px-2">Add Cart</button>
+                        <button class="btn btn-success px-2 ">Buy Now</button>
+                      </div>
+                    </div>
+                </div>  
+              </div>
+
+              <div class="py-2 col-12 col-md-6 col-lg-3" style="height: 480px;">
+                <div class="card h-100 bg-warning">
+                    <div class=" card-header" style="height: 55%;">
+                      <img src="https://img.freepik.com/free-photo/top-view-hot-espresso-with-brown-coffee-seeds-brown-wooden-desk-coffee-cup-drink_140725-28168.jpg?semt=ais_user_personalization&w=740&q=80" alt="" class="img-thumbnill rounded-4 w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="card-body" style="height: 45%;">
+                      <h5>Coffee</h5>
+                      <p class="text-dark">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </p>
+                      <p class="text-dark">1.5$</p>
+                      <div class="d-flex justify-content-between">
+                        <button class="btn btn-primary px-2">Add Cart</button>
+                        <button class="btn btn-success px-2 ">Buy Now</button>
+                      </div>
+                    </div>
+                </div>  
+              </div>
+
+              <div class="py-2 col-12 col-md-6 col-lg-3" style="height: 480px;">
+                <div class="card h-100 bg-warning">
+                    <div class=" card-header" style="height: 55%;">
+                      <img src="https://img.freepik.com/free-photo/top-view-hot-espresso-with-brown-coffee-seeds-brown-wooden-desk-coffee-cup-drink_140725-28168.jpg?semt=ais_user_personalization&w=740&q=80" alt="" class="img-thumbnill rounded-4 w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="card-body" style="height: 45%;">
+                      <h5>Coffee</h5>
+                      <p class="text-dark">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </p>
+                      <p class="text-dark">1.5$</p>
+                      <div class="d-flex justify-content-between">
+                        <button class="btn btn-primary px-2">Add Cart</button>
+                        <button class="btn btn-success px-2 ">Buy Now</button>
+                      </div>
+                    </div>
+                </div>  
+              </div>
+
+              <div class="py-2 col-12 col-md-6 col-lg-3" style="height: 480px;">
+                <div class="card h-100 bg-warning">
+                    <div class=" card-header" style="height: 55%;">
+                      <img src="https://img.freepik.com/free-photo/top-view-hot-espresso-with-brown-coffee-seeds-brown-wooden-desk-coffee-cup-drink_140725-28168.jpg?semt=ais_user_personalization&w=740&q=80" alt="" class="img-thumbnill rounded-4 w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="card-body" style="height: 45%;">
+                      <h5>Coffee</h5>
+                      <p class="text-dark">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </p>
+                      <p class="text-dark">1.5$</p>
+                      <div class="d-flex justify-content-between">
+                        <button class="btn btn-primary px-2">Add Cart</button>
+                        <button class="btn btn-success px-2 ">Buy Now</button>
+                      </div>
+                    </div>
+                </div>  
+              </div>
+
+              <div class="py-2 col-12 col-md-6 col-lg-3" style="height: 480px;">
+                <div class="card h-100 bg-warning">
+                    <div class=" card-header" style="height: 55%;">
+                      <img src="https://img.freepik.com/free-photo/top-view-hot-espresso-with-brown-coffee-seeds-brown-wooden-desk-coffee-cup-drink_140725-28168.jpg?semt=ais_user_personalization&w=740&q=80" alt="" class="img-thumbnill rounded-4 w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="card-body" style="height: 45%;">
+                      <h5>Coffee</h5>
+                      <p class="text-dark">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </p>
+                      <p class="text-dark">1.5$</p>
+                      <div class="d-flex justify-content-between">
+                        <button class="btn btn-primary px-2">Add Cart</button>
+                        <button class="btn btn-success px-2 ">Buy Now</button>
+                      </div>
+                    </div>
+                </div>  
+              </div>
+
+              <div class="py-2 col-12 col-md-6 col-lg-3" style="height: 480px;">
+                <div class="card h-100 bg-warning">
+                    <div class=" card-header" style="height: 55%;">
+                      <img src="https://img.freepik.com/free-photo/top-view-hot-espresso-with-brown-coffee-seeds-brown-wooden-desk-coffee-cup-drink_140725-28168.jpg?semt=ais_user_personalization&w=740&q=80" alt="" class="img-thumbnill rounded-4 w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="card-body" style="height: 45%;">
+                      <h5>Coffee</h5>
+                      <p class="text-dark">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </p>
+                      <p class="text-dark">1.5$</p>
+                      <div class="d-flex justify-content-between">
+                        <button class="btn btn-primary px-2">Add Cart</button>
+                        <button class="btn btn-success px-2 ">Buy Now</button>
+                      </div>
+                    </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="coffee" role="tabpanel" aria-labelledby="coffee-tab" tabindex="0">
+            <h1 class="text-light text-decoration-underline">Coffee</h1>
+            <div class="row py-3 m-0 ">
+
+              <div class="py-2 col-12 col-md-6 col-lg-3" style="height: 480px;">
+                <div class="card h-100 bg-warning">
+                    <div class=" card-header" style="height: 55%;">
+                      <img src="https://img.freepik.com/free-photo/top-view-hot-espresso-with-brown-coffee-seeds-brown-wooden-desk-coffee-cup-drink_140725-28168.jpg?semt=ais_user_personalization&w=740&q=80" alt="" class="img-thumbnill rounded-4 w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="card-body" style="height: 45%;">
+                      <h5>Coffee</h5>
+                      <p class="text-dark">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </p>
+                      <p class="text-dark">1.5$</p>
+                      <div class="d-flex justify-content-between">
+                        <button class="btn btn-primary px-2">Add Cart</button>
+                        <button class="btn btn-success px-2 ">Buy Now</button>
+                      </div>
+                    </div>
+                </div>  
+              </div>
+
+              <div class="py-2 col-12 col-md-6 col-lg-3" style="height: 480px;">
+                <div class="card h-100 bg-warning">
+                    <div class=" card-header" style="height: 55%;">
+                      <img src="https://img.freepik.com/free-photo/top-view-hot-espresso-with-brown-coffee-seeds-brown-wooden-desk-coffee-cup-drink_140725-28168.jpg?semt=ais_user_personalization&w=740&q=80" alt="" class="img-thumbnill rounded-4 w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="card-body" style="height: 45%;">
+                      <h5>Coffee</h5>
+                      <p class="text-dark">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </p>
+                      <p class="text-dark">1.5$</p>
+                      <div class="d-flex justify-content-between">
+                        <button class="btn btn-primary px-2">Add Cart</button>
+                        <button class="btn btn-success px-2 ">Buy Now</button>
+                      </div>
+                    </div>
+                </div>  
+              </div>
+
+              <div class="py-2 col-12 col-md-6 col-lg-3" style="height: 480px;">
+                <div class="card h-100 bg-warning">
+                    <div class=" card-header" style="height: 55%;">
+                      <img src="https://img.freepik.com/free-photo/top-view-hot-espresso-with-brown-coffee-seeds-brown-wooden-desk-coffee-cup-drink_140725-28168.jpg?semt=ais_user_personalization&w=740&q=80" alt="" class="img-thumbnill rounded-4 w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="card-body" style="height: 45%;">
+                      <h5>Coffee</h5>
+                      <p class="text-dark">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </p>
+                      <p class="text-dark">1.5$</p>
+                      <div class="d-flex justify-content-between">
+                        <button class="btn btn-primary px-2">Add Cart</button>
+                        <button class="btn btn-success px-2 ">Buy Now</button>
+                      </div>
+                    </div>
+                </div>  
+              </div>
+
+              <div class="py-2 col-12 col-md-6 col-lg-3" style="height: 480px;">
+                <div class="card h-100 bg-warning">
+                    <div class=" card-header" style="height: 55%;">
+                      <img src="https://img.freepik.com/free-photo/top-view-hot-espresso-with-brown-coffee-seeds-brown-wooden-desk-coffee-cup-drink_140725-28168.jpg?semt=ais_user_personalization&w=740&q=80" alt="" class="img-thumbnill rounded-4 w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="card-body" style="height: 45%;">
+                      <h5>Coffee</h5>
+                      <p class="text-dark">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </p>
+                      <p class="text-dark">1.5$</p>
+                      <div class="d-flex justify-content-between">
+                        <button class="btn btn-primary px-2">Add Cart</button>
+                        <button class="btn btn-success px-2 ">Buy Now</button>
+                      </div>
+                    </div>
+                </div>  
+              </div>
+
+              <div class="py-2 col-12 col-md-6 col-lg-3" style="height: 480px;">
+                <div class="card h-100 bg-warning">
+                    <div class=" card-header" style="height: 55%;">
+                      <img src="https://img.freepik.com/free-photo/top-view-hot-espresso-with-brown-coffee-seeds-brown-wooden-desk-coffee-cup-drink_140725-28168.jpg?semt=ais_user_personalization&w=740&q=80" alt="" class="img-thumbnill rounded-4 w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="card-body" style="height: 45%;">
+                      <h5>Coffee</h5>
+                      <p class="text-dark">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </p>
+                      <p class="text-dark">1.5$</p>
+                      <div class="d-flex justify-content-between">
+                        <button class="btn btn-primary px-2">Add Cart</button>
+                        <button class="btn btn-success px-2 ">Buy Now</button>
+                      </div>
+                    </div>
+                </div>  
+              </div>
+
+              <div class="py-2 col-12 col-md-6 col-lg-3" style="height: 480px;">
+                <div class="card h-100 bg-warning">
+                    <div class=" card-header" style="height: 55%;">
+                      <img src="https://img.freepik.com/free-photo/top-view-hot-espresso-with-brown-coffee-seeds-brown-wooden-desk-coffee-cup-drink_140725-28168.jpg?semt=ais_user_personalization&w=740&q=80" alt="" class="img-thumbnill rounded-4 w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="card-body" style="height: 45%;">
+                      <h5>Coffee</h5>
+                      <p class="text-dark">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </p>
+                      <p class="text-dark">1.5$</p>
+                      <div class="d-flex justify-content-between">
+                        <button class="btn btn-primary px-2">Add Cart</button>
+                        <button class="btn btn-success px-2 ">Buy Now</button>
+                      </div>
+                    </div>
+                </div>  
+              </div>
+
+              <div class="py-2 col-12 col-md-6 col-lg-3" style="height: 480px;">
+                <div class="card h-100 bg-warning">
+                    <div class=" card-header" style="height: 55%;">
+                      <img src="https://img.freepik.com/free-photo/top-view-hot-espresso-with-brown-coffee-seeds-brown-wooden-desk-coffee-cup-drink_140725-28168.jpg?semt=ais_user_personalization&w=740&q=80" alt="" class="img-thumbnill rounded-4 w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="card-body" style="height: 45%;">
+                      <h5>Coffee</h5>
+                      <p class="text-dark">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </p>
+                      <p class="text-dark">1.5$</p>
+                      <div class="d-flex justify-content-between">
+                        <button class="btn btn-primary px-2">Add Cart</button>
+                        <button class="btn btn-success px-2 ">Buy Now</button>
+                      </div>
+                    </div>
+                </div>  
+              </div>
+
+              <div class="py-2 col-12 col-md-6 col-lg-3" style="height: 480px;">
+                <div class="card h-100 bg-warning">
+                    <div class=" card-header" style="height: 55%;">
+                      <img src="https://img.freepik.com/free-photo/top-view-hot-espresso-with-brown-coffee-seeds-brown-wooden-desk-coffee-cup-drink_140725-28168.jpg?semt=ais_user_personalization&w=740&q=80" alt="" class="img-thumbnill rounded-4 w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="card-body" style="height: 45%;">
+                      <h5>Coffee</h5>
+                      <p class="text-dark">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </p>
+                      <p class="text-dark">1.5$</p>
+                      <div class="d-flex justify-content-between">
+                        <button class="btn btn-primary px-2">Add Cart</button>
+                        <button class="btn btn-success px-2 ">Buy Now</button>
+                      </div>
+                    </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="Milk-tea" role="tabpanel" aria-labelledby="Milk-tea-tab" tabindex="0">
+            <h1 class="text-light text-decoration-underline">Milk tea</h1>
+            <div class="row py-3 m-0 ">
+
+              <div class="py-2 col-12 col-md-6 col-lg-3" style="height: 480px;">
+                <div class="card h-100 bg-warning">
+                    <div class=" card-header" style="height: 55%;">
+                      <img src="https://img.freepik.com/free-photo/top-view-hot-espresso-with-brown-coffee-seeds-brown-wooden-desk-coffee-cup-drink_140725-28168.jpg?semt=ais_user_personalization&w=740&q=80" alt="" class="img-thumbnill rounded-4 w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="card-body" style="height: 45%;">
+                      <h5>Coffee</h5>
+                      <p class="text-dark">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </p>
+                      <p class="text-dark">1.5$</p>
+                      <div class="d-flex justify-content-between">
+                        <button class="btn btn-primary px-2">Add Cart</button>
+                        <button class="btn btn-success px-2 ">Buy Now</button>
+                      </div>
+                    </div>
+                </div>  
+              </div>
+
+              <div class="py-2 col-12 col-md-6 col-lg-3" style="height: 480px;">
+                <div class="card h-100 bg-warning">
+                    <div class=" card-header" style="height: 55%;">
+                      <img src="https://img.freepik.com/free-photo/top-view-hot-espresso-with-brown-coffee-seeds-brown-wooden-desk-coffee-cup-drink_140725-28168.jpg?semt=ais_user_personalization&w=740&q=80" alt="" class="img-thumbnill rounded-4 w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="card-body" style="height: 45%;">
+                      <h5>Coffee</h5>
+                      <p class="text-dark">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </p>
+                      <p class="text-dark">1.5$</p>
+                      <div class="d-flex justify-content-between">
+                        <button class="btn btn-primary px-2">Add Cart</button>
+                        <button class="btn btn-success px-2 ">Buy Now</button>
+                      </div>
+                    </div>
+                </div>  
+              </div>
+
+              <div class="py-2 col-12 col-md-6 col-lg-3" style="height: 480px;">
+                <div class="card h-100 bg-warning">
+                    <div class=" card-header" style="height: 55%;">
+                      <img src="https://img.freepik.com/free-photo/top-view-hot-espresso-with-brown-coffee-seeds-brown-wooden-desk-coffee-cup-drink_140725-28168.jpg?semt=ais_user_personalization&w=740&q=80" alt="" class="img-thumbnill rounded-4 w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="card-body" style="height: 45%;">
+                      <h5>Coffee</h5>
+                      <p class="text-dark">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </p>
+                      <p class="text-dark">1.5$</p>
+                      <div class="d-flex justify-content-between">
+                        <button class="btn btn-primary px-2">Add Cart</button>
+                        <button class="btn btn-success px-2 ">Buy Now</button>
+                      </div>
+                    </div>
+                </div>  
+              </div>
+
+              <div class="py-2 col-12 col-md-6 col-lg-3" style="height: 480px;">
+                <div class="card h-100 bg-warning">
+                    <div class=" card-header" style="height: 55%;">
+                      <img src="https://img.freepik.com/free-photo/top-view-hot-espresso-with-brown-coffee-seeds-brown-wooden-desk-coffee-cup-drink_140725-28168.jpg?semt=ais_user_personalization&w=740&q=80" alt="" class="img-thumbnill rounded-4 w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="card-body" style="height: 45%;">
+                      <h5>Coffee</h5>
+                      <p class="text-dark">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </p>
+                      <p class="text-dark">1.5$</p>
+                      <div class="d-flex justify-content-between">
+                        <button class="btn btn-primary px-2">Add Cart</button>
+                        <button class="btn btn-success px-2 ">Buy Now</button>
+                      </div>
+                    </div>
+                </div>  
+              </div>
+
+              <div class="py-2 col-12 col-md-6 col-lg-3" style="height: 480px;">
+                <div class="card h-100 bg-warning">
+                    <div class=" card-header" style="height: 55%;">
+                      <img src="https://img.freepik.com/free-photo/top-view-hot-espresso-with-brown-coffee-seeds-brown-wooden-desk-coffee-cup-drink_140725-28168.jpg?semt=ais_user_personalization&w=740&q=80" alt="" class="img-thumbnill rounded-4 w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="card-body" style="height: 45%;">
+                      <h5>Coffee</h5>
+                      <p class="text-dark">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </p>
+                      <p class="text-dark">1.5$</p>
+                      <div class="d-flex justify-content-between">
+                        <button class="btn btn-primary px-2">Add Cart</button>
+                        <button class="btn btn-success px-2 ">Buy Now</button>
+                      </div>
+                    </div>
+                </div>  
+              </div>
+
+              <div class="py-2 col-12 col-md-6 col-lg-3" style="height: 480px;">
+                <div class="card h-100 bg-warning">
+                    <div class=" card-header" style="height: 55%;">
+                      <img src="https://img.freepik.com/free-photo/top-view-hot-espresso-with-brown-coffee-seeds-brown-wooden-desk-coffee-cup-drink_140725-28168.jpg?semt=ais_user_personalization&w=740&q=80" alt="" class="img-thumbnill rounded-4 w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="card-body" style="height: 45%;">
+                      <h5>Coffee</h5>
+                      <p class="text-dark">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </p>
+                      <p class="text-dark">1.5$</p>
+                      <div class="d-flex justify-content-between">
+                        <button class="btn btn-primary px-2">Add Cart</button>
+                        <button class="btn btn-success px-2 ">Buy Now</button>
+                      </div>
+                    </div>
+                </div>  
+              </div>
+
+              <div class="py-2 col-12 col-md-6 col-lg-3" style="height: 480px;">
+                <div class="card h-100 bg-warning">
+                    <div class=" card-header" style="height: 55%;">
+                      <img src="https://img.freepik.com/free-photo/top-view-hot-espresso-with-brown-coffee-seeds-brown-wooden-desk-coffee-cup-drink_140725-28168.jpg?semt=ais_user_personalization&w=740&q=80" alt="" class="img-thumbnill rounded-4 w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="card-body" style="height: 45%;">
+                      <h5>Coffee</h5>
+                      <p class="text-dark">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </p>
+                      <p class="text-dark">1.5$</p>
+                      <div class="d-flex justify-content-between">
+                        <button class="btn btn-primary px-2">Add Cart</button>
+                        <button class="btn btn-success px-2 ">Buy Now</button>
+                      </div>
+                    </div>
+                </div>  
+              </div>
+
+              <div class="py-2 col-12 col-md-6 col-lg-3" style="height: 480px;">
+                <div class="card h-100 bg-warning">
+                    <div class=" card-header" style="height: 55%;">
+                      <img src="https://img.freepik.com/free-photo/top-view-hot-espresso-with-brown-coffee-seeds-brown-wooden-desk-coffee-cup-drink_140725-28168.jpg?semt=ais_user_personalization&w=740&q=80" alt="" class="img-thumbnill rounded-4 w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="card-body" style="height: 45%;">
+                      <h5>Coffee</h5>
+                      <p class="text-dark">
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </p>
+                      <p class="text-dark">1.5$</p>
+                      <div class="d-flex justify-content-between">
+                        <button class="btn btn-primary px-2">Add Cart</button>
+                        <button class="btn btn-success px-2 ">Buy Now</button>
+                      </div>
+                    </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Meet Our Team -->
+      <div id="service" class="container-fluid h-100 pt-5 border-top" style="background-color:rgb(40, 17, 17)">
+        <div class="col-md-10 col-lg-7 mx-auto d-flex flex-column align-item-center justify-content-center">
+          <h3 class="text-light mb-4 text-center">Meet Our Team</h3>
+          <p class="text-center teext-light">Lorem ipsum, dolor sit amedent, voluptate architecto esse fugiat iste quia laboriosam in a quo quis nam dolorem aliquid obcaecati, ullam recusandae ea nemo, itaque eius quisquam facilis. Rem deleniti tempora a, tempore modi accusamus suscipit beatae dicta quae sequi quos distinctio, quidem saepe natus.</p>
+        </div>
+        <!-- profile -->
+        <div class="container row m-auto">
+          <div class="col-12 col-md-6 col-lg-4 mb-3" style="height:500px;">
+            <div class="card h-100">
+              <div class="card-header">
+                <h3 class="m-0 mt-0">Vin Savorn</h3>
+                <p class="fs-5 mt-1">Position : Cashier</p>
+              </div>
+              <div class="card-body overflow-hidden">
+                <img src="/asset/Image/image1.png" alt="image" class="img-thumbnill rounded-4 w-100 h-100 object-fit-cover"">
+              </div>
+            </div>   
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3" style="height:500px;">
+            <div class="card h-100">
+              <div class="card-header">
+                <h3 class="m-0 mt-0">On Vuhty</h3>
+                <p class="fs-5 mt-1">Position : Manager</p>
+              </div>
+              <div class="card-body overflow-hidden">
+                <img src="/asset/Image/image2.png" alt="image" class="img-thumbnill rounded-4 w-100 h-100 object-fit-cover"">
+              </div>
+            </div>   
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3" style="height:500px;">
+            <div class="card h-100">
+              <div class="card-header">
+                <h3 class="m-0 mt-0">Heng Bora</h3>
+                <p class="fs-5 mt-1">Position : Service</p>
+              </div>
+              <div class="card-body overflow-hidden">
+                <img src="/asset/Image/image.png" alt="image" class="img-thumbnill rounded-4 w-100 h-100 object-fit-cover"">
+              </div>
+            </div>   
+          </div>
+        </div>
+      </div>
+      <!-- Contact -->
+      <div id="contact" class="container-fluid py-5 border-top" style="background-color: rgb(40, 17, 17)">
+        <div class="container ">
+          <h1 class="text-center text-light mb-5">Contact to Our For Support</h1>
+          <!-- map -->
+            <div class="row">
+              <div class="col-12 col-md-6 mx-auto">
+                <iframe class=" rounded-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.7652231711204!2d104.8881667740283!3d11.568681244083189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109519fe4077d69%3A0x20138e822e434660!2sRoyal%20University%20of%20Phnom%20Penh!5e0!3m2!1sen!2skh!4v1771923300808!5m2!1sen!2skh" width="600" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <!-- contct -->
+              <form action="" class="col-12 col-md-6 bg-light py-2 px-4 rounded-4">
+                <div class="">
+                  <input type="text" class="form-control  shadow-none py-2 my-4 fs-6" placeholder="Your Name">
+                  <input type="text" class="form-control  shadow-none py-2 my-4 fs-6" placeholder="Enter Your Email">
+                  <textarea class="form-control my-4" rows="8" id="" placeholder="Your Message"></textarea>
+                  <div class=" btn btn-primary p-2 w-25 fs-5">Submit</div>
+                </div>
+              </form>
+            </div>
+        </div>
+
+      </div>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="container-fluid p-0" style="background-color: rgb(22, 11, 11);">
+        <div class="container row m-auto py-5">
+          <div class="col-12 col-md-4">
+            <a href="" class="text-align-center fs-3 navbar-brand text-light fw-bold">Brew-Coffee</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque fugiat perspiciatis ab quam dolores ea deleniti laboriosam! Harum, voluptatibus iure maxime veniam corporis atque facilis voluptatem voluptates unde fuga expedita!</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <a href="" class="text-align-center fs-3 navbar-brand text-light fw-bold">Contect</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque fugiat perspiciatis ab quam dolores ea deleniti laboriosam! Harum, voluptatibus iure maxime veniam corporis atque facilis voluptatem voluptates unde fuga expedita!</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <a href="" class="text-align-center fs-3 navbar-brand text-light fw-bold">New Slater</a>
+            <p>Cumque fugiatab quam dolores ea deleniti laboriosam! Harum, voluptatibus iure maxime veniam corporis atque facilis voluptatem voluptates unde fuga expedita!</p>
+            <input type="text" class="form-control" placeholder="Message to our">
+          </div>
+        </div>
+      </div>
+      <div class="bg-secondary d-flex justify-content-center align-items-center">
+        <h6 class="py-2">&copy; Coffee-brew All right Reverse | Buil by On Vuhty</h6>
+      </div>
+    </footer>
+  </body>
+</html>

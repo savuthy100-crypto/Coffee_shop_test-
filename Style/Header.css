@@ -1,0 +1,35 @@
+.bg{
+    background-color: rgb(88, 4, 4);
+    border-bottom: 1px solid white;
+}
+li{
+    list-style: none;
+}
+.nav-link:hover{
+    color:orangered !important;
+}
+.bi:hover{
+    background-color: rgb(131, 14, 14);
+}
+
+#intputsearch{
+    background-color: brown;
+    border: none;
+}
+.offcanvas-header, .offcanvas-body{
+    background-color: rgb(88, 4, 4);
+}
+.nav-item{
+    transition: all .4s ease-in-out;
+}
+.nav-item:hover{
+    background-color: brown;
+    padding-left: 15px;
+    transition: all .4s ease-in-out;
+}
+        /* tablet */
+@media screen and (min-width:577px) and (max-width:992px){
+.tablet{
+        width: 50% !important;
+    }
+}
